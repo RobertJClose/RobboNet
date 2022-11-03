@@ -13,7 +13,7 @@ const StyledImage = styled.img`
 
 const KSPPage = () => {
   return (
-    <Layout pageTitle="Hue City case study - RobboNet">
+    <Layout pageTitle="KSP - RobboNet">
       <h1>KSP</h1>
       <p>This is my essay about ksp</p>
       <a>My github</a>
