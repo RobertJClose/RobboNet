@@ -4,23 +4,29 @@ import { ProjectGallery } from "../components/ProjectGallery";
 
 const projectsData = [
   {
-    title: "Hue City: A map design case study in Rising Storm 2",
-    description: "I talk about things related to the Rising Storm 2 map",
-    slug: "hue-city",
-    date: "2022-11-03",
+    title: "KSP Companion (Prototype)",
+    description: "A companion tool to be used alongside the game Kerbal Space Program.",
+    slug: "ksp-companion-prototype",
   },
   {
-    title: "KSP",
-    description: "I talk about things related to the Rising Storm 2 map",
-    slug: "ksp",
-    date: "2022-11-03",
+    title: "Hue City: A Map Design Case Study In Rising Storm 2",
+    description: "An essay exploring why a particular map proved so popular in Rising Storm 2.",
+    slug: "hue-city",
+  },
+  {
+    title: "Untitled Tower Defence Game",
+    description: "A fun ongoing project inspired by Risk Of Rain and the Bloons TD flash games.",
+    slug: "untitled-tower-defence",
   },
 ];
 
 const IndexPage = ({ data }) => {
   return (
     <Layout pageTitle="RobboNet">
-      Hello there
+      <p>
+        Hello there! <br></br>
+        This simple site has all the things I've been working on.
+      </p>
       <ProjectGallery projectsData={projectsData} />
     </Layout>
   );
