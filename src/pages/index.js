@@ -27,6 +27,9 @@ const IndexPage = ({ data }) => {
         Hello there! <br></br>
         This simple site has all the things I've been working on.
       </p>
+      <p>
+        My <a href="https://github.com/RobertJClose" target="_blank">GitHub.</a>
+      </p>
       <ProjectGallery projectsData={projectsData} />
     </Layout>
   );
