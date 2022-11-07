@@ -17,7 +17,6 @@ const StyledProjects = styled.ul`
 export const ProjectGallery = ({ projectsData }) => {
   return (
     <div>
-      <h2>Projects:</h2>
       <StyledProjects>
         {projectsData.map((project) => (
           <article key={project.id}>
