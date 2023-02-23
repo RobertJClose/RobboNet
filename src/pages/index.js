@@ -1,10 +1,11 @@
 import * as React from "react";
 import Layout from "../components/layouts/Layout";
 import KSPShowoffVideo from "../videos/KSP Companion Showoff.mp4";
-import KSPDetailedVideo from "../videos/KSP Companion Detailed.mp4"
-import HueCityEssayPage from "./projects/hue-city.js"
-import HueCityVisualElements from "./projects/images/Hue City Visual Elements.png"
-import HueCityChokepointNetwork from "./projects/images/Hue Chokepoint Network.png"
+import KSPDetailedVideo from "../videos/KSP Companion Detailed.mp4";
+import WaypointsSceneShowoff from "../videos/Quick Turret Waypoint Scene View.mp4"
+import HueCityEssayPage from "./projects/hue-city.js";
+import HueCityVisualElements from "./projects/images/Hue City Visual Elements.png";
+import HueCityChokepointNetwork from "./projects/images/Hue Chokepoint Network.png";
 import { ProjectGallery } from "../components/ProjectGallery";
 
 const projectsData = [
@@ -62,7 +63,7 @@ const IndexPage = ({ data }) => {
         companion to the game; during this project I designed and built the
         prototype for that companion.
       </p>
-      <video autoPlay loop muted width="720">
+      <video autoPlay controls loop muted width="720">
         <source src={KSPShowoffVideo} type="video/mp4" />
       </video>
       <h2>Things that went really well:</h2>
@@ -167,7 +168,7 @@ const IndexPage = ({ data }) => {
         programming, and I love the feeling of reaping those awards as I work on
         projects now.
       </p>
-      <video autoPlay loop muted width="720">
+      <video autoPlay controls loop muted width="720">
         <source src={KSPDetailedVideo} type="video/mp4" />
       </video>
       <h2>Things to be done differently:</h2>
@@ -348,14 +349,14 @@ const IndexPage = ({ data }) => {
         queue for particular roles within the team, allowing the empowered
         matchmaking system to more reliably deliver the embryo of a cohesive
         team. <i>Squad</i> and <i>Hell Let Loose</i> feature the milestone
-        innovation of having a separate chat channel for the team leader and his
-        squad leaders. Finally, <i>Verdun</i> and <i>Post Scriptum</i> wisely
-        predefine what type of soldiers make up each squad, solving the common
-        issue in Rising Storm 2 of squads either being a mix of uncomplementary
-        specialised weaponry or almost exclusively riflemen with little
-        specialised support.
+        innovation of having a separate chat channel for the team leader and
+        their squad leaders. Finally, <i>Verdun</i> and <i>Post Scriptum</i>{" "}
+        wisely predefine what type of soldiers make up each squad, solving the
+        common issue in Rising Storm 2 of squads either being a mix of
+        uncomplementary specialised weaponry or almost exclusively riflemen with
+        little specialised support.
       </p>
-      <h3>Conclusion (Verbatim)</h3>
+      <h2>Conclusion (Verbatim)</h2>
       <p>
         Rising Storm 2's idiosyncratic damage mechanics, inherited from its
         ancestor Red Orchestra, bring unique challenges to the task of map
@@ -397,6 +398,63 @@ const IndexPage = ({ data }) => {
         reached, I hope that the memory of Hue City and the other popular maps
         of today will live on through the competitive arenas of the future.
       </p>
+      <h1>Quick Turret (Tower Defence Project)</h1>
+      <p>
+        This last project started as a small and fast project that was only
+        meant to show me how much I'd learned. I'd been playing a lot of{" "}
+        <a href="https://en.wikipedia.org/wiki/Risk_of_Rain_2" target="_blank">
+          Risk Of Rain 2
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/Bloons_Tower_Defense"
+          target="_blank"
+        >
+          Bloons Tower Defence 4
+        </a>{" "}
+        and thought that the two game's systems would mesh well together. Risk
+        Of Rain 2's systems in particular drew my attention. I know the game is
+        made in Unity, and I'd spotted several things that to me were
+        symptomatic of the game's code being well structured. I wanted to try
+        and emulate the game's systems, but in a different context where their
+        expression would change. More specifically, Risk Of Rain's damage system
+        can handle a plethora of interacting damage types being dealt to
+        players, turrets, enemies, and environment features all at once in
+        massive quantities. Furthermore, success in Risk Of Rain 2 involves
+        combining lots of items and player abilities in satisfying synergy.
+        Bloons, on the other hand, requires synergy between the placement of
+        different turret types and the path the balloons are following. I think
+        combining the two games and their synergies could be good fun.
+      </p>
+      <p>
+        The reason for including this project here is that working on this
+        project has seriously levelled up my Unity skills. After coming up with
+        the above demo, I then created a path in Blender for the enemies to
+        follow. At first I used Unity's NavMesh system to tell the enemies how
+        to navigate the path, but this led to the enemies mundanely following
+        each other with ignorance to the branching paths. So I set about
+        creating waypoints for them to follow, but this proved to be incredibly
+        tedious. I understand better now that an important part of being a good
+        Unity developer is being able to create not just powerful MonoBehaviour
+        components, but also custom Editor behaviour that makes those components
+        easy to work with. So I set about creating a powerful waypoint system
+        that is well integrated into the Unity Editor.
+      </p>
+      <p>
+        The result is the Waypoints component, and its custom Editor. In the
+        Unity Inspector, the component has a custom list view that gives the
+        user not just the data associated with each Waypoint, but simple ways of
+        editing that data. The real power of the component is in the Scene view
+        however. I wanted user to be able to use the component entirely within the 
+        Scene view via handles and a simple GUI. From the Scene view GUI each waypoint
+        can be renamed, moved about, and have its connections edited. Handles in the 
+        Scene view provide the easier way of manipulating waypoints and their connections 
+        however. There are hotkeys to make editing really fast, and the component is 
+        totally integrated with the Unity Editor's Undo system.
+      </p>
+      <video autoPlay controls loop muted width="720">
+        <source src={WaypointsSceneShowoff} type="video/mp4" />
+      </video>
       <ProjectGallery projectsData={projectsData} />
     </Layout>
   );
