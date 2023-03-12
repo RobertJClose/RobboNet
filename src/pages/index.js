@@ -1,4 +1,5 @@
 import * as React from "react";
+import HomePageVideo from "../videos/HomePageCompilation.mp4";
 import Layout from "../components/layouts/Layout";
 import { ProjectGallery } from "../components/ProjectGallery";
 
@@ -36,10 +37,10 @@ const IndexPage = ({ data }) => {
           GitHub.
         </a>
       </p>
-      <video autoPlay controls loop muted width="720">
-        <source src={WaypointsSceneShowoff} type="video/mp4" />
-      </video>
       <ProjectGallery projectsData={projectsData} />
+      <video autoPlay controls loop muted width="720">
+        <source src={HomePageVideo} type="video/mp4" />
+      </video>
     </Layout>
   );
 };
