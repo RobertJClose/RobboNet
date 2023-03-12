@@ -6,7 +6,7 @@ import HueCityChokepointNetwork from "./images/Hue Chokepoint Network.png";
 const HueCityPage = () => {
   return (
     <Layout pageTitle="RobboNet: Hue City Case Study">
-            <h1>Hue City: A Map Design Case Study In Rising Storm 2</h1>
+      <h1>Hue City: A Map Design Case Study In Rising Storm 2</h1>
       <p>
         While most of my time is spent learning how to program the games I wish
         existed, I also spend a lot of time thinking about the extant games I
@@ -22,7 +22,8 @@ const HueCityPage = () => {
         details such as where Rising Storm 2 sits in the ever evolving FPS
         tradition, and how we might design maps for these games in the future. I
         will summarise the main arguments and copy the conclusion out verbatim
-        here. If you feel tempted to read the whole essay, you may find it at the bottom of the page.
+        here. If you feel tempted to read the whole essay, you may find it at
+        the bottom of the page.
       </p>
       <h2>Introduction</h2>
       <p>
