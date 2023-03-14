@@ -21,18 +21,18 @@ const HueCityPage = () => {
         upon not just the design of the map itself, but also related contextual
         details such as where Rising Storm 2 sits in the ever evolving FPS
         tradition, and how we might design maps for these games in the future. I
-        will summarise the main arguments and copy the conclusion out verbatim
-        here. If you feel tempted to read the whole essay, you may find it at
-        the bottom of the page.
+        will summarise the main arguments and copy the conclusion out verbatim.
+        If you feel tempted to read the whole essay, you may find it at the
+        bottom of the page.
       </p>
       <h2>Introduction</h2>
       <p>
         In Rising Storm 2, the map Hue City is an absolute blast. The fighting
         is incredibly intense for both attackers and defenders, and when the
-        game was first released players would often vote to play in Hue at every
-        possible opportunity. I belive that the reason for this popularity lies
-        in the interaction between the design of the map and the design of the
-        game itself.
+        game was first released, players would often vote to play in Hue at
+        every possible opportunity. I believe that the reason for this
+        popularity lies in the interaction between the design of the map and the
+        design of the game itself.
       </p>
       <h2>The Impact Of A Shooter's Time-To-Kill</h2>
       <p>
