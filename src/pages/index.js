@@ -11,16 +11,16 @@ const projectsData = [
     slug: "ksp-companion-prototype",
   },
   {
-    title: "Hue City: A Map Design Case Study In Rising Storm 2",
-    description:
-      "An essay exploring why a particular map proved so popular in Rising Storm 2.",
-    slug: "hue-city",
-  },
-  {
     title: "Untitled Tower Defence Game",
     description:
       "A fun ongoing project inspired by Risk Of Rain and the Bloons TD flash games.",
     slug: "untitled-tower-defence",
+  },
+  {
+    title: "Hue City: A Map Design Case Study In Rising Storm 2",
+    description:
+      "An essay exploring why a particular map proved so popular in Rising Storm 2.",
+    slug: "hue-city",
   },
 ];
 
