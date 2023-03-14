@@ -58,7 +58,7 @@ const KSPPage = () => {
         structs to make it simpler to write the large amount of code that worked
         with floating point values that semantically represented angles. Angular
         values are similar to floats and doubles, but with periodic equivalence
-        at integer multiples of 2PI. This can make common tasks, such as working
+        at integer multiples of 2&pi;. This can make common tasks, such as working
         out if an angle is between two others, more complex. The two angle
         structs have public methods for computing many non-trivial cases such as
         this, and all the tricky equivalence issues are resolved under-the-hood.
