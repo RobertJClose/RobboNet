@@ -58,7 +58,9 @@ const IndexPage = ({ data }) => {
         deployed using Netlify. The videos on the website were edited with
         Shotcut.
       </p>
+      <h1>My Projects:</h1>
       <ProjectGallery projectsData={projectsData} />
+      <h1>Robbo the Gamer:</h1>
       <video autoPlay controls loop muted width="720">
         <source src={HomePageVideo} type="video/mp4" />
       </video>
