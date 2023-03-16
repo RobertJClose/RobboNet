@@ -61,9 +61,84 @@ const IndexPage = ({ data }) => {
         Shotcut.
       </p>
       <h1>Robbo the Gamer:</h1>
+      <p>
+        In my opinion, the first Dark Souls is the greatest game of all time. I
+        think it's a great example of games as an art form, and I love the
+        immense originality and creativity of its design. I find the world and
+        the combat deeply immersive, and I've had so many incredibly unique and
+        memorable experiences in the multiplayer. The game has long been a major
+        source of inspiration for me. My favourite shooter is Rising Storm 2,
+        another game with an unconventional design that focuses on immersion. A
+        lot of indie games, particularly roguelikes, also occupy my list of
+        favourites. I think Risk of Rain 2 is really exceptional, and I've also
+        enjoyed Enter The Gungeon, FTL: Faster The Light, Battle Brothers,
+        Bomber Crew, the immaculate Celeste, and many more.
+      </p>
+      <p>
+        Usually though I spend more time in strategy games rather than action
+        games. I have loved the Total War series since I was a child, although I
+        have been somewhat estranged by the recent titles. More recently I have
+        loved the grand strategy games of Paradox Interactive, particularly the
+        incredibly unique Crusader Kings II.
+      </p>
+      <p>
+        I also enjoy some retro gaming. I still have my PS2 for playing Burnout
+        3, Tekken 3, and a few other games whose timeless designs I find
+        inspirational. I regularly maintain and dust the old console to make
+        sure it'll last many more years to come. I also use{" "}
+        <a href="https://bluemaxima.org/flashpoint/" target="_blank">
+          Flashpoint
+        </a>{" "}
+        to play some of my old favourite flash games - mainly Mud and Blood 2.
+        Looking back on them now, I think old PS2 and flash games were made with
+        a lot of free and wild creativity, and yet they often retained a
+        simplicity that I think is very admirable and even beautiful. While
+        there's certainly a lot of things that rightfully belong to the past,
+        I'm looking forward to the day when I'll have the skills to revive some
+        of the best ideas that have been long forgotten.
+      </p>
       <video autoPlay controls loop muted width="720">
         <source src={HomePageVideo} type="video/mp4" />
       </video>
+      <p>
+        As I mentioned in my bio, I like to use my patience to compete in games.
+        That means finding characters and playstyles that I think are flexible
+        enough to have an answer for every aggresive question. I then try to
+        calmly withstand pressure while I push towards a position where I have
+        the advantage. I think people find me incredibly frustrating to play
+        against, and I confess that I get a lot of pleasure and confidence when
+        I detect that my opponent cannot handle my playstyle mentally. My
+        favourite battleground for this is Dark Souls, but I've also used this
+        method in chess, FIFA, Rocket League,{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/Wargame%3A_Red_Dragon"
+          target="_blank"
+        >
+          Wargame
+        </a>
+        , and many single player strategy games.
+      </p>
+      <p>
+        The above might make it sound like I am a ruthless competitor, and
+        that's true. Given this fact, and the nature of the games mentioned
+        above, it might be easy to assume that I not very sporting, but this is
+        far from the truth. I love competing for the sake of the game, and I
+        always try to be magnanimous in both victory and defeat. In my opinion,
+        a merciless pursuit of victory is done out of respect to the skills of
+        the opponent, not as an act of disrespect. You will never,{" "}
+        <b>
+          <i>ever</i>
+        </b>
+        , catch me putting down a teammate who has made a mistake, or
+        disrespecting an opponent who has frustrated my style. The rampant
+        toxicity in the communities of many of the games I play is something I
+        find deeply regretable, and is something I hope will change as the
+        gaming world continues to evolve. If you're really that desperate to
+        win, and if you truly love and respect the game you're playing, you'll
+        accept whatever has happened and keep trying your best - in my
+        experience, this attitude guides you back onto the path of victory
+        anyway.
+      </p>
     </Layout>
   );
 };
