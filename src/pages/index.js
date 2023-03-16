@@ -11,7 +11,7 @@ const projectsData = [
     slug: "ksp-companion-prototype",
   },
   {
-    title: "Untitled Tower Defence Game",
+    title: "Quick Turret (Tower Defence Project)",
     description:
       "A fun ongoing project inspired by Risk Of Rain and the Bloons TD flash games.",
     slug: "untitled-tower-defence",
