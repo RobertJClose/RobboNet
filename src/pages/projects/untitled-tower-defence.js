@@ -2,8 +2,16 @@ import * as React from "react";
 import Layout from "../../components/layouts/Layout";
 import styled from "styled-components";
 import WaypointsSceneShowoff from "./videos/Quick Turret Waypoint Scene View.mp4"
+import { Unity, useUnityContext } from "react-unity-webgl";
 
 const TowerDefencePage = () => {
+  const { unityProvider } = new useUnityContext({
+    loaderUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.loader.js",
+    dataUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.data",
+    frameworkUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.framework.js",
+    codeUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.wasm",
+  })
+
   return (
     <Layout pageTitle="RobboNet: Untitled Tower Defence Game">
       <h1>Quick Turret (Tower Defence Project)</h1>
@@ -34,6 +42,8 @@ const TowerDefencePage = () => {
         different turret types and the path the balloons are following. I think
         combining the two games and their synergies could be good fun.
       </p>
+      <Unity unityProvider={unityProvider} style={{ width: 640, height: 360 }}/>
+      <h2>The Waypoints Component</h2>
       <p>
         The reason for including this project here is that working on this
         project has seriously levelled up my Unity skills. After coming up with
@@ -49,6 +59,9 @@ const TowerDefencePage = () => {
         easy to work with. So I set about creating a powerful waypoint system
         that is well integrated into the Unity Editor.
       </p>
+      <video autoPlay controls loop muted width="720">
+        <source src={WaypointsSceneShowoff} type="video/mp4" />
+      </video>
       <p>
         The result is the Waypoints component, and its custom Editor. In the
         Unity Inspector, the component has a custom list view that gives the
@@ -62,9 +75,6 @@ const TowerDefencePage = () => {
         editing really fast, and the component is totally integrated with the
         Unity Editor's Undo system.
       </p>
-      <video autoPlay controls loop muted width="720">
-        <source src={WaypointsSceneShowoff} type="video/mp4" />
-      </video>
     </Layout>
   );
 };
