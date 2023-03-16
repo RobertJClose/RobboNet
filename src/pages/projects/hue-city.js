@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../../components/layouts/Layout";
+import ChokepointVideo from "./videos/Hue City Chokepoint.mp4";
 import HueCityVisualElements from "./images/Hue City Visual Elements.png";
 import HueCityChokepointNetwork from "./images/Hue Chokepoint Network.png";
 
@@ -62,6 +63,9 @@ const HueCityPage = () => {
         chokepoint engagements, with the progress of attackers occurring as
         checkpoints towards their objective.
       </p>
+      <video autoPlay controls loop muted width="720">
+        <source src={ChokepointVideo} type="video/mp4" />
+      </video>
       <h2>Hue City's Chokepoint Network</h2>
       <p>
         This is why Hue City is such a successful map: it offers a sequence of
