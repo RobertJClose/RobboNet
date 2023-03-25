@@ -1,17 +1,28 @@
 import * as React from "react";
+import { useEffect } from "react";
 import Layout from "../../components/layouts/Layout";
 import styled from "styled-components";
 import WaypointsSceneShowoff from "./videos/Quick Turret Waypoint Scene View.mp4"
 import { Unity, useUnityContext } from "react-unity-webgl";
+import { globalHistory } from "@reach/router"
+
 
 const TowerDefencePage = () => {
-  const { unityProvider } = new useUnityContext({
+  const { unityProvider, isLoaded, unload } = new useUnityContext({
     loaderUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.loader.js",
     dataUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.data",
     frameworkUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.framework.js",
     codeUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.wasm",
   })
 
+  useEffect(() => {
+    globalHistory.listen(async ({ action }) => {
+      if ((action === "PUSH" || action === "POP") && isLoaded) {
+        await unload()
+      }
+    })
+  }, [isLoaded])
+  
   return (
     <Layout pageTitle="RobboNet: Untitled Tower Defence Game">
       <h1>Quick Turret (Tower Defence Project)</h1>
@@ -42,7 +53,7 @@ const TowerDefencePage = () => {
         different turret types and the path the balloons are following. I think
         combining the two games and their synergies could be good fun.
       </p>
-      <Unity unityProvider={unityProvider} style={{ width: 640, height: 360 }}/>
+      <Unity unityProvider={unityProvider} style={{ width: 640, height: 360, visibility: isLoaded ? "visible" : "hidden" }}/>
       <h2>The Waypoints Component</h2>
       <p>
         The reason for including this project here is that working on this
