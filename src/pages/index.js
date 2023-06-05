@@ -27,15 +27,17 @@ const projectsData = [
 const IndexPage = ({ data }) => {
   return (
     <Layout pageTitle="RobboNet">
-      <h1>Bio:</h1>
+      <h2>Bio:</h2>
       <p>
-        Hello there! My name is Robbie.<br></br>
+        Hello there! My name is Robert, but most people call me either Robbie or Robbo.
+        <br/>
+        <br/>
         My aim is to start a career in the computer games industry, and this
-        website presents my portfolio of projects. You may also find more on{" "}
+        website presents my portfolio of projects. You may also find more on my{" "}
         <a href="https://github.com/RobertJClose" target="_blank">
-          my GitHub.
+          GitHub.
         </a>{" "}
-        After graduating with an MSci in theoretical physics from the University
+        After graduating with a first class MSci in theoretical physics from the University
         of Nottingham, and then being waylaid by the pandemic, I started
         teaching myself programming through the Unity game engine.
       </p>
@@ -53,14 +55,9 @@ const IndexPage = ({ data }) => {
         migrated to Obsidian personal knowledge management software to keep my
         notes and thoughts organised as I roll towards the start of my career.
       </p>
-      <h1>My Projects:</h1>
+      <h2>My Projects:</h2>
       <ProjectGallery projectsData={projectsData} />
-      <p>
-        The website itself was built using the React Javascript library, and
-        deployed using Netlify. The videos on the website were edited with
-        Shotcut.
-      </p>
-      <h1>Robbo the Gamer:</h1>
+      <h2>Robbo the Gamer:</h2>
       <p>
         In my opinion, the first Dark Souls is the greatest game of all time. I
         think it's a great example of games as an art form, and I love the
@@ -126,9 +123,9 @@ const IndexPage = ({ data }) => {
         always try to be magnanimous in both victory and defeat. In my opinion,
         a merciless pursuit of victory is done out of respect to the skills of
         the opponent, not as an act of disrespect. You will never,{" "}
-        <b>
-          <i>ever</i>
-        </b>
+        <strong>
+          <em>ever</em>
+        </strong>
         , catch me putting down a teammate who has made a mistake, or
         disrespecting an opponent who has frustrated my style. The rampant
         toxicity in the communities of many of the games I play is something I
