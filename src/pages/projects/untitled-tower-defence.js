@@ -27,8 +27,11 @@ const TowerDefencePage = () => {
     <Layout pageTitle="RobboNet: Untitled Tower Defence Game">
       <h1>Quick Turret (Tower Defence Project)</h1>
       <p>
-        This last project started as a small and fast project that was only
-        meant to show me how much I'd learned. I'd been playing a lot of{" "}
+        I started this project as a quick attempt at making a cool turret - just
+        to show myself how much I'd learned. It then took on a life of its own.
+      </p>
+      <p>
+        I'd been playing a lot of{" "}
         <a href="https://en.wikipedia.org/wiki/Risk_of_Rain_2" target="_blank">
           Risk Of Rain 2
         </a>{" "}
@@ -39,21 +42,27 @@ const TowerDefencePage = () => {
         >
           Bloons Tower Defence 4
         </a>{" "}
-        and thought that the two game's systems would mesh well together. Risk
-        Of Rain 2's systems in particular drew my attention. I know the game is
-        made in Unity, and I'd spotted several things that to me were
-        symptomatic of the game's code being well structured. I wanted to try
-        and emulate the game's systems, but in a different context where their
-        expression would change. More specifically, Risk Of Rain's damage system
-        can handle a plethora of interacting damage types being dealt to
-        players, turrets, enemies, and environment features all at once in
-        massive quantities. Furthermore, success in Risk Of Rain 2 involves
-        combining lots of items and player abilities in satisfying synergy.
-        Bloons, on the other hand, requires synergy between the placement of
-        different turret types and the path the balloons are following. I think
-        combining the two games and their synergies could be good fun.
+        and felt inspired by the design of the two games. Risk Of Rain 2's
+        systems in particular drew my attention. I know the game is made in
+        Unity, and I'd spotted several things that to me were symptomatic of the
+        game's code being well structured.
+        <br/>
+        Risk Of Rain's damage system can handle a
+        plethora of interacting damage types being dealt to players, turrets,
+        enemies, and environment features all at once in massive quantities.
+        Furthermore, success in Risk Of Rain 2 involves combining lots of items
+        and player abilities in satisfying synergy. Bloons, on the other hand,
+        requires synergy between the placement of different turret types and the
+        path the balloons are following. This pushed me to build this demo:
       </p>
-      <Unity unityProvider={unityProvider} style={{ width: 640, height: 360, visibility: isLoaded ? "visible" : "hidden" }}/>
+      <Unity
+        unityProvider={unityProvider}
+        style={{
+          width: 640,
+          height: 360,
+          visibility: isLoaded ? "visible" : "hidden",
+        }}
+      />
       <h2>The Waypoints Component</h2>
       <p>
         The reason for including this project here is that working on this
