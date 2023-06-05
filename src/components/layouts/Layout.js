@@ -26,6 +26,16 @@ export default function Layout({ children, pageTitle }) {
       </h1>
       <Navbar></Navbar>
       <ContentWrap>{children}</ContentWrap>
+      <footer>
+        <p>
+          Email: RobertClose@ProtonMail.com <br/>
+          GitHub: <a href="https://github.com/RobertJClose" target="_blank">https://github.com/RobertJClose</a>
+        </p>
+        <p>
+          This website was built and deployed with React, Gatsby, and Netlify. The videos on the website 
+          were edited with Shotcut.
+        </p>
+      </footer>
     </PageWrap>
   );
 }
