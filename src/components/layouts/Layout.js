@@ -3,6 +3,8 @@ import React from "react";
 import { Navbar } from "../Navbar";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
+import "./layout.css";
+
 const PageWrap = styled.main`
   max-width: 1024px;
   margin: 2rem auto;

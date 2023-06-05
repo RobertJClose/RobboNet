@@ -1,0 +1,40 @@
+
+body {
+    background-color: rgb(205, 215, 214);
+}
+
+a {
+    text-decoration: none;
+
+    color: rgb(79, 124, 172)
+}
+
+h1 {
+    font-family: "High tower Text";
+    font-size: 64px;
+}
+
+h2 {
+    font-family: "High Tower Text";
+    font-size: 48px;
+
+    border-style: none none solid none;
+    border-color: rgb(255, 87, 10);
+
+    text-align: left;
+}
+
+h3 {
+    font-family: "High Tower Text";
+    font-size: 36px
+}
+
+footer {
+    border-style: solid none none none;
+}
+
+p {
+    font-family: Cambria;
+
+    text-align: left;
+}
