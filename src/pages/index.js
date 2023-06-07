@@ -94,7 +94,7 @@ const IndexPage = ({ data }) => {
         I'm looking forward to the day when I'll have the skills to revive some
         of the best ideas that have been long forgotten.
       </p>
-      <video autoPlay controls loop muted width="720">
+      <video autoPlay controls loop muted>
         <source src={HomePageVideo} type="video/mp4" />
       </video>
       <p>
