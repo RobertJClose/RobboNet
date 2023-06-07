@@ -56,7 +56,8 @@ const TowerDefencePage = () => {
         2 involves combining lots of items and player abilities in satisfying
         synergy. Bloons, on the other hand, requires synergy between the
         placement of different turret types and the path the balloons are
-        following. This pushed me to build this demo:
+        following. This inspired me to start expanding this project, and after 
+        many iterations this is the latest demo:
       </p>
       <Unity
         unityProvider={unityProvider}
@@ -110,7 +111,7 @@ const TowerDefencePage = () => {
         to another Waypoint. In this way, a directed graph (digraph) is formed.
       </p>
       <p>
-        The Waypoints component the integrates said digraph with a Unity
+        The Waypoints component then integrates said digraph with a Unity
         GameObject, while a WaypointsNavigator component offers a simple API for
         navigating around a graph of Waypoints. The Waypoint and
         WaypointConnection classes are in theory extendable with weights and
@@ -132,7 +133,7 @@ const TowerDefencePage = () => {
       <video autoPlay controls loop muted>
         <source src={WaypointsSceneShowoff} type="video/mp4" />
       </video>
-      <h3 id="DamageSystem">The Damage System (and DamageText subsystem)</h3>
+      <h3 id="DamageSystem">The Damage System</h3>
       <p>
         To handle the dealing of damage I then created the Damage System. There
         are a few structs and classes composing the Damage System:
@@ -156,12 +157,12 @@ const TowerDefencePage = () => {
         have something you want to deal damage, have it create DamageEffect
         instances and call <code>Hurtable.Hurt()</code>. When you need your
         other components to react to taking damage (or dying) there are then
-        simple <code>OnHurt</code> and <code>OnDie</code> events that components
+        <code>OnHurt</code> and <code>OnDie</code> events that components
         can subscribe to.
       </p>
       <h4>The DamageText Subsystem</h4>
       <p>
-        To visualise dealt damage I then made the DamageText subsystem:
+        To visualise dealt damage I also made the DamageText subsystem:
         <ul>
           <li>DamageText (MonoBehaviour)</li>
           <li>DamageTextFactory (MonoBehaviour)</li>
@@ -186,7 +187,7 @@ const TowerDefencePage = () => {
         With the help of another powerful custom Editor, a DamageTextSettings
         object allows for some cosmetic options to remain unset by an override,
         so the final appearance of a DamageText instance can be a mixture that
-        represents several present DamageTypes all at once. An common example of
+        represents several present DamageTypes all at once. A common example of
         this in the demo is blocked-critical damage - the text is styled as
         critical damage, except its colour is overridden to dark grey:
       </p>
