@@ -63,7 +63,7 @@ const HueCityPage = () => {
         chokepoint engagements, with the progress of attackers occurring as
         checkpoints towards their objective.
       </p>
-      <video autoPlay controls loop muted width="720">
+      <video autoPlay controls loop muted>
         <source src={ChokepointVideo} type="video/mp4" />
       </video>
       <h2>Hue City's Chokepoint Network</h2>
@@ -81,12 +81,12 @@ const HueCityPage = () => {
         I came up with a diagrammatic way of displaying the network of
         chokepoints. Using these visual elements:
       </p>
-      <img src={HueCityVisualElements} width="400" />
+      <img src={HueCityVisualElements}/>
       <p>
         We can now examine the chokepoint network of a section of Hue City in
         greater detail:
       </p>
-      <img src={HueCityChokepointNetwork} width="800" />
+      <img src={HueCityChokepointNetwork}/>
       <p>
         This diagram represents the attackers' approach to capture zone C on Hue
         City. First of all, when we examine the capture zone itself we see that
