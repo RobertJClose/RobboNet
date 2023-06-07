@@ -40,3 +40,7 @@ a:link {
 a:visited {
     color: rgb(0, 0, 123);
 }
+
+footer {
+    border-top: 2px solid darkgray;
+}
