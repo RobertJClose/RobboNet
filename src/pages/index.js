@@ -13,7 +13,7 @@ const projectsData = [
   {
     title: "Quick Turret (Tower Defence Project)",
     description:
-      "A fun ongoing project inspired by Risk Of Rain and the Bloons TD flash games.",
+      "My best work, this project was inspired by Risk Of Rain and the Bloons TD flash games.",
     slug: "untitled-tower-defence",
   },
   {
@@ -33,10 +33,9 @@ const IndexPage = ({ data }) => {
         <br/>
         <br/>
         My aim is to start a career in the computer games industry, and this
-        website presents my portfolio of projects. You may also find more on my{" "}
-        <a href="https://github.com/RobertJClose" target="_blank">
-          GitHub.
-        </a>{" "}
+        website presents my portfolio of projects.
+        <br/>
+        <br/>
         After graduating with a first class MSci in theoretical physics from the University
         of Nottingham, and then being waylaid by the pandemic, I started
         teaching myself programming through the Unity game engine.
@@ -127,10 +126,7 @@ const IndexPage = ({ data }) => {
           <em>ever</em>
         </strong>
         , catch me putting down a teammate who has made a mistake, or
-        disrespecting an opponent who has frustrated my style. The rampant
-        toxicity in the communities of many of the games I play is something I
-        find deeply regretable, and is something I hope will change as the
-        gaming world continues to evolve. If you're really that desperate to
+        disrespecting an opponent who has frustrated my style. If you're really that desperate to
         win, and if you truly love and respect the game you're playing, you'll
         accept whatever has happened and keep trying your best - in my
         experience, this attitude guides you back onto the path of victory
