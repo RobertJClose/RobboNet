@@ -155,7 +155,7 @@ const HueCityPage = () => {
         emergent teamplay to occur, even in the context of Rising Storm 2's
         largely uncoordinated teams. Along with a lack of communication, there
         is generally a lack of coordination within the 6 man squads that every
-        player is nominally a part of of. Rather than act as units under the
+        player is nominally a part of. Rather than act as units under the
         direction of the team leader, players in squads often play
         independently. Several FPS games have made innovative changes however,
         and adopting them could then enable map designers to ask more complex
