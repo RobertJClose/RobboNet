@@ -1,51 +1,42 @@
+html {
+    font-family: helvetica;
 
-body {
-    background-color: rgb(205, 215, 214);
-}
-
-a {
-    text-decoration: none;
-
-    color: rgb(79, 124, 172)
+    background: #272932;
+    color: rgb(198, 198, 198);
 }
 
 h1 {
-    font-family: "High tower Text";
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 h2 {
-    font-family: "High Tower Text";
-    font-size: 48px;
-
-    border-style: none none solid none;
-    border-color: rgb(255, 87, 10);
-
-    text-align: left;
+    font-size: 3rem;
 }
 
 h3 {
-    font-family: "High Tower Text";
-    font-size: 24px;
-
-    border-style: none none solid none;
-
+    font-size: 2rem;
     text-align: left;
 }
 
 h4 {
-    font-family: "High Tower Text";
-    font-size: 18px;
-    
     text-align: left;
-}
-
-footer {
-    border-style: solid none none none;
 }
 
 p {
-    font-family: Hanken, "Proxima Nova", Helvetica, sans-serif;
-
     text-align: left;
+}
+
+img, video {
+    max-height: 400px;
+    max-width: 80vw;
+
+    border: 2px solid black;
+}
+
+a:link {
+    color: #4d7ea8;
+}
+
+a:visited {
+    color: rgb(0, 0, 123);
 }

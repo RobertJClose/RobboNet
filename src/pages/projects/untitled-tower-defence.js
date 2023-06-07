@@ -129,7 +129,7 @@ const TowerDefencePage = () => {
         expanded or hidden, and thanks to some hotkeys the Scene view workflow
         is really smooth:
       </p>
-      <video autoPlay controls loop muted width="540">
+      <video autoPlay controls loop muted>
         <source src={WaypointsSceneShowoff} type="video/mp4" />
       </video>
       <h3 id="DamageSystem">The Damage System (and DamageText subsystem)</h3>
@@ -193,7 +193,6 @@ const TowerDefencePage = () => {
       <img
         src={BlockedCriticalDamageText}
         alt="Blocked Critical Damage Text"
-        width="250"
       />
       <h3 id="TargetingSystem">The Targeting System</h3>
       <p>
@@ -233,7 +232,6 @@ const TowerDefencePage = () => {
       <img
         src={SubtargetsImage}
         alt="Containozoid Enemy Subtargets"
-        width="550"
       />
       <h3 id="TurretComponents">The Turret Components</h3>
       <p>
@@ -315,7 +313,6 @@ const TowerDefencePage = () => {
       <img
         src={AutoloaderImage}
         alt="Autoloader Component Custom Inspector"
-        width="450"
       />
       <h4>The RaycastGun</h4>
       <p>
