@@ -20,9 +20,9 @@ export const ProjectGallery = ({ projectsData }) => {
       <StyledProjects>
         {projectsData.map((project) => (
           <article key={project.id}>
-            <h3>
+            <h4>
               <Link to={"/projects/" + project.slug}>{project.title}</Link>
-            </h3>
+            </h4>
             <p>{project.description}</p>
           </article>
         ))}

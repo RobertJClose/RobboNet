@@ -33,12 +33,19 @@ h3 {
     text-align: left;
 }
 
+h4 {
+    font-family: "High Tower Text";
+    font-size: 18px;
+    
+    text-align: left;
+}
+
 footer {
     border-style: solid none none none;
 }
 
 p {
-    font-family: Cambria;
+    font-family: Hanken, "Proxima Nova", Helvetica, sans-serif;
 
     text-align: left;
 }
