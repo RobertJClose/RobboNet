@@ -56,7 +56,7 @@ const TowerDefencePage = () => {
         2 involves combining lots of items and player abilities in satisfying
         synergy. Bloons, on the other hand, requires synergy between the
         placement of different turret types and the path the balloons are
-        following. This inspired me to start expanding this project, and after 
+        following. This inspired me to start expanding this project, and after
         many iterations this is the latest demo:
       </p>
       <Unity
@@ -116,8 +116,8 @@ const TowerDefencePage = () => {
         navigating around a graph of Waypoints. The Waypoint and
         WaypointConnection classes are in theory extendable with weights and
         more, enabling custom and complex navigation of the waypoints - I did
-        envision 'linelike' and 'arealike' Waypoints to coexist with the
-        pointlike Waypoints, but in reality implementing this wasn't within the
+        envision 'line-like' and 'area-like' Waypoints to coexist with the
+        point-like Waypoints, but in reality implementing this wasn't within the
         scope of the project.
       </p>
       <p>
@@ -143,7 +143,6 @@ const TowerDefencePage = () => {
           <li>Hurtable (MonoBehaviour)</li>
           <li>HurtableStats (ScriptableObject)</li>
         </ul>
-        The most important classes are DamageEffect, DamageType and Hurtable.
         Each DamageEffect instance contains an amount of damage, as well as a
         DamageType variable that indicates if this instance of damage carries
         any special effects. DamageType is an enum with the flags attribute,
@@ -156,9 +155,9 @@ const TowerDefencePage = () => {
         something you want to take damage, give it a Hurtable component; if you
         have something you want to deal damage, have it create DamageEffect
         instances and call <code>Hurtable.Hurt()</code>. When you need your
-        other components to react to taking damage (or dying) there are then
-        <code>OnHurt</code> and <code>OnDie</code> events that components
-        can subscribe to.
+        other components to react to taking damage (or dying) there are then{" "}
+        <code>OnHurt</code> and <code>OnDie</code> events that components can
+        subscribe to.
       </p>
       <h4>The DamageText Subsystem</h4>
       <p>
@@ -175,13 +174,12 @@ const TowerDefencePage = () => {
       </p>
       <p>
         The DamageTextFactory checks the DamageType of the incoming damage, and
-        then uses a DamageTextSettings object to decide what settings to give
-        each DamageText instance. The settings contained in a DamageTextSettings
-        object allow for some really nice behaviour, where certian types of
-        damage can take priority and override the cosmetic effects of lower
-        priority effects. For example, its important that players know when
-        their damage is blocked, so dark grey blocked damage has a high
-        priority.
+        then uses a DamageTextSettings object to set the appearance of the text
+        prefabs. The settings contained in a DamageTextSettings object allow for
+        some really nice behaviour, where certain types of damage can take
+        priority and override the cosmetic effects of lower priority effects.
+        For example, its important that players know when their damage is
+        blocked, so dark grey blocked damage has a high priority.
       </p>
       <p>
         With the help of another powerful custom Editor, a DamageTextSettings
@@ -191,10 +189,7 @@ const TowerDefencePage = () => {
         this in the demo is blocked-critical damage - the text is styled as
         critical damage, except its colour is overridden to dark grey:
       </p>
-      <img
-        src={BlockedCriticalDamageText}
-        alt="Blocked Critical Damage Text"
-      />
+      <img src={BlockedCriticalDamageText} alt="Blocked Critical Damage Text" />
       <h3 id="TargetingSystem">The Targeting System</h3>
       <p>
         Next we have the Targeting System. This system allows for GameObjects to
@@ -230,10 +225,7 @@ const TowerDefencePage = () => {
         around relative to the origin of the Targetable, and they have their own
         subset of tags and thus options for prioritisation.
       </p>
-      <img
-        src={SubtargetsImage}
-        alt="Containozoid Enemy Subtargets"
-      />
+      <img src={SubtargetsImage} alt="Containozoid Enemy Subtargets" />
       <h3 id="TurretComponents">The Turret Components</h3>
       <p>
         Finally, I brought these systems together along with some bespoke
@@ -311,10 +303,7 @@ const TowerDefencePage = () => {
         touch I made a really nice UI for manipulating the ammo belt in the
         inspector.
       </p>
-      <img
-        src={AutoloaderImage}
-        alt="Autoloader Component Custom Inspector"
-      />
+      <img src={AutoloaderImage} alt="Autoloader Component Custom Inspector" />
       <h4>The RaycastGun</h4>
       <p>
         This component actually fires at the target. It simply wraps the{" "}
