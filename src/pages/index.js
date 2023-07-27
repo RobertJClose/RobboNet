@@ -86,12 +86,6 @@ const IndexPage = ({ data }) => {
           Flashpoint
         </a>{" "}
         to play some of my old favourite flash games - mainly Mud and Blood 2.
-        Looking back on them now, I think old PS2 and flash games were made with
-        a lot of free and wild creativity, and yet they often retained a
-        simplicity that I think is very admirable and even beautiful. While
-        there's certainly a lot of things that rightfully belong to the past,
-        I'm looking forward to the day when I'll have the skills to revive some
-        of the best ideas that have been long forgotten.
       </p>
       <video autoPlay controls loop muted>
         <source src={HomePageVideo} type="video/mp4" />
