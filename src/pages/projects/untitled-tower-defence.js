@@ -3,28 +3,12 @@ import { useEffect } from "react";
 import Layout from "../../components/layouts/Layout";
 import styled from "styled-components";
 import WaypointsSceneShowoff from "./videos/Quick Turret Waypoint Scene View.mp4"
-import { Unity, useUnityContext } from "react-unity-webgl";
-import { globalHistory } from "@reach/router";
 import BlockedCriticalDamageText from "./images/BlockedCriticalDamageText.png";
 import SubtargetsImage from "./images/SubtargetGizmos.png";
 import AutoloaderImage from "./images/AutoloaderComponent.png";
+import { UnityProject } from "../../components/UnityProject";
 
 const TowerDefencePage = () => {
-  const { unityProvider, isLoaded, unload } = new useUnityContext({
-    loaderUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.loader.js",
-    dataUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.data",
-    frameworkUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.framework.js",
-    codeUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.wasm",
-  }) 
-
-  useEffect(() => {
-    globalHistory.listen(async ({ action }) => {
-      if ((action === "PUSH" || action === "POP") && isLoaded) {
-        await unload()
-      }
-    })
-  }, [isLoaded])
-  
   return (
     <Layout pageTitle="RobboNet: Untitled Tower Defence Game">
       <h1>Quick Turret (Tower Defence Project)</h1>
@@ -59,14 +43,7 @@ const TowerDefencePage = () => {
         following. This inspired me to start expanding this project, and after
         many iterations this is the latest demo:
       </p>
-      <Unity
-        unityProvider={unityProvider}
-        style={{
-          width: 960,
-          height: 540,
-          visibility: isLoaded ? "visible" : "hidden",
-        }}
-      />
+      <UnityProject projectName="QuickTurret 1.0.0" style={{width: 960, height: 540}}/>
       <h2>The Systems</h2>
       <p>
         After struggling with scaling complexity in the KSP Companion Prototype,

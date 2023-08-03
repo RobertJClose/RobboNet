@@ -2,7 +2,7 @@ import * as React from "react";
 import HomePageVideo from "../videos/HomePageCompilation.mp4";
 import Layout from "../components/layouts/Layout";
 import { ProjectGallery } from "../components/ProjectGallery";
-import { Unity, useUnityContext } from "react-unity-webgl";
+import { UnityProject } from "../components/UnityProject";
 
 const projectsData = [
   {
@@ -26,16 +26,9 @@ const projectsData = [
 ];
 
 const IndexPage = ({ data }) => {
-  const { unityProvider : unityProvider } = useUnityContext({
-    loaderUrl: "/unityWebGLBuilds/ToyBuild/Build/ToyBuild.loader.js",
-    dataUrl: "/unityWebGLBuilds/ToyBuild/Build/ToyBuild.data",
-    frameworkUrl: "/unityWebGLBuilds/ToyBuild/Build/ToyBuild.framework.js",
-    codeUrl: "/unityWebGLBuilds/ToyBuild/Build/ToyBuild.wasm"
-  })
-
   return (
     <Layout pageTitle="RobboNet">
-      <Unity unityProvider={unityProvider} style={{width: 350, height: 350, pointerEvents: "none"}}/>
+      <UnityProject projectName="ToyBuild" style={{width: 350, height: 350, pointerEvents: "none"}} />
       <h2>Bio:</h2>
       <p>
         Hello there! My name is Robert, but most people call me either Robbie or Robbo.
