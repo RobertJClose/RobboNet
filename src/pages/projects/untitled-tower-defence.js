@@ -11,11 +11,11 @@ import AutoloaderImage from "./images/AutoloaderComponent.png";
 
 const TowerDefencePage = () => {
   const { unityProvider, isLoaded, unload } = new useUnityContext({
-    loaderUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.loader.js",
-    dataUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.data",
-    frameworkUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.framework.js",
-    codeUrl: "/unityWebGLBuilds/BasicScene/Build/BasicScene.wasm",
-  })
+    loaderUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.loader.js",
+    dataUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.data",
+    frameworkUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.framework.js",
+    codeUrl: "/unityWebGLBuilds/QuickTurret 1.0.0/Build/QuickTurret 1.0.0.wasm",
+  }) 
 
   useEffect(() => {
     globalHistory.listen(async ({ action }) => {
@@ -62,8 +62,8 @@ const TowerDefencePage = () => {
       <Unity
         unityProvider={unityProvider}
         style={{
-          width: 640,
-          height: 360,
+          width: 960,
+          height: 540,
           visibility: isLoaded ? "visible" : "hidden",
         }}
       />
