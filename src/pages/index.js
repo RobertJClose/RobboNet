@@ -1,31 +1,8 @@
 import * as React from "react";
 import HomePageVideo from "../videos/HomePageCompilation.mp4";
 import Layout from "../components/layouts/Layout";
-import { ProjectGallery } from "../components/ProjectGallery";
 import { UnityProject } from "../components/UnityProject";
 import { Link } from 'gatsby';
-import QuickTurretPage from "./projects/untitled-tower-defence.js"
-
-const projectsData = [
-  {
-    title: "KSP Companion (Prototype)",
-    description:
-      "A companion tool to be used alongside the game Kerbal Space Program.",
-    slug: "ksp-companion-prototype",
-  },
-  {
-    title: "Quick Turret (Tower Defence Project)",
-    description:
-      "My best work, this project was inspired by Risk Of Rain and the Bloons TD flash games.",
-    slug: "untitled-tower-defence",
-  },
-  {
-    title: "Hue City: A Map Design Case Study In Rising Storm 2",
-    description:
-      "An essay exploring why a particular map proved so popular in Rising Storm 2.",
-    slug: "hue-city",
-  },
-];
 
 const IndexPage = ({ data }) => {
   return (
