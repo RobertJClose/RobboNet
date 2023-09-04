@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../../components/layouts/Layout";
-import ChokepointVideo from "./videos/Hue City Chokepoint.mp4";
+import ChokepointVideo from "./videos/Hue City Video.mp4";
 import HueCityVisualElements from "./images/Hue City Visual Elements.png";
 import HueCityChokepointNetwork from "./images/Hue Chokepoint Network.png";
 
