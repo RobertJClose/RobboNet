@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
         projectName="ToyBuild"
         style={{ width: 350, height: 350, pointerEvents: "none" }}
       />
-      <h2>Bio:</h2>
+      <h2>Bio</h2>
       <p>
         Hello there! My name is Robert, but most people call me either Robbie or
         Robbo.
@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => {
         migrated to Obsidian personal knowledge management software to keep my
         notes and thoughts organised as I roll towards the start of my career.
       </p>
-      <h2>Timeline:</h2>
+      <h2>Timeline</h2>
       <div class="timeline">
         <div class="item left">
           <div class="content">
@@ -136,7 +136,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <h2>Robbo the Gamer:</h2>
+      <h2>Robbo the Gamer</h2>
       <p>
         In my opinion, the first Dark Souls is the greatest game of all time. I
         think it's a great example of games as an art form, and I love the
