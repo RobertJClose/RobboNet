@@ -295,15 +295,6 @@ const TowerDefencePage = () => {
         if you look closely you can see that the colour of the bullet trail
         reflects the AmmoType of the fired round.
       </p>
-      <h2>The Original Demo</h2>
-      <p>
-        I stated at the top that this project had very small and quickly built
-        origins, so here it is. Many of the systems described above are not
-        present in the code of this demo, and I think enthusiastically expanding
-        in scale from this state of affairs would've eventually run into some
-        major issues. Instead I feel I have built something that could much more
-        readily expand to encompass a complete game.
-      </p>
     </Layout>
   );
 };
