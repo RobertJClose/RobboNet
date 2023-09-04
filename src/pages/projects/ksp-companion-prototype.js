@@ -34,7 +34,7 @@ const KSPPage = () => {
           companion to the game; during this project I designed and built the
           prototype for that companion.
         </p>
-        <video autoPlay controls loop muted>
+        <video autoPlay controls loop muted width={700}>
           <source src={KSPShowoffVideo} type="video/mp4" />
         </video>
         <h2>Things that went well</h2>
@@ -148,7 +148,7 @@ const KSPPage = () => {
           subsequent approach to programming, and I love the feeling of reaping
           those awards as I work on projects now.
         </p>
-        <video autoPlay controls loop muted>
+        <video autoPlay controls loop muted width={700}>
           <source src={KSPDetailedVideo} type="video/mp4" />
         </video>
         <h2>Things to be done differently</h2>

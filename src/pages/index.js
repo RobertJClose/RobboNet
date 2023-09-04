@@ -167,7 +167,7 @@ const IndexPage = ({ data }) => {
         </a>{" "}
         to play some of my old favourite flash games - mainly Mud and Blood 2.
       </p>
-      <video autoPlay controls loop muted>
+      <video autoPlay controls loop muted width={700}>
         <source src={HomePageVideo} type="video/mp4" />
       </video>
       <p>

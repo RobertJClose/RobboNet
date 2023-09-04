@@ -107,7 +107,7 @@ const TowerDefencePage = () => {
         expanded or hidden, and thanks to some hotkeys the Scene view workflow
         is really smooth:
       </p>
-      <video autoPlay controls loop muted>
+      <video autoPlay controls loop muted width={700}>
         <source src={WaypointsSceneShowoff} type="video/mp4" />
       </video>
       <h3 id="DamageSystem">The Damage System</h3>
@@ -166,7 +166,7 @@ const TowerDefencePage = () => {
         this in the demo is blocked-critical damage - the text is styled as
         critical damage, except its colour is overridden to dark grey:
       </p>
-      <img src={BlockedCriticalDamageText} alt="Blocked Critical Damage Text" />
+      <img src={BlockedCriticalDamageText} alt="Blocked Critical Damage Text" width={300}/>
       <h3 id="TargetingSystem">The Targeting System</h3>
       <p>
         Next we have the Targeting System. This system allows for GameObjects to
@@ -202,7 +202,7 @@ const TowerDefencePage = () => {
         around relative to the origin of the Targetable, and they have their own
         subset of tags and thus options for prioritisation.
       </p>
-      <img src={SubtargetsImage} alt="Containozoid Enemy Subtargets" />
+      <img src={SubtargetsImage} alt="Containozoid Enemy Subtargets" width={400}/>
       <h3 id="TurretComponents">The Turret Components</h3>
       <p>
         Finally, I brought these systems together along with some bespoke

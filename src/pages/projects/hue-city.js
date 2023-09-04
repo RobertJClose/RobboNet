@@ -63,7 +63,7 @@ const HueCityPage = () => {
         chokepoint engagements, with the progress of attackers occurring as
         checkpoints towards their objective.
       </p>
-      <video autoPlay controls loop muted>
+      <video autoPlay controls loop muted width={700}>
         <source src={ChokepointVideo} type="video/mp4" />
       </video>
       <h2>Hue City's Chokepoint Network</h2>
@@ -79,25 +79,22 @@ const HueCityPage = () => {
         expectations of the players, it then offers attackers a diverse and
         interesting set of choices to their approach. To show this more easily,
         I came up with a diagrammatic way of displaying the network of
-        chokepoints. Using these visual elements:
+        chokepoints. Using these visual elements we can examine the chokepoint
+        network of a section of Hue City in greater detail:
       </p>
-      <img src={HueCityVisualElements}/>
-      <p>
-        We can now examine the chokepoint network of a section of Hue City in
-        greater detail:
-      </p>
-      <img src={HueCityChokepointNetwork}/>
+      <img src={HueCityVisualElements} width={500} />
+      <img src={HueCityChokepointNetwork} />
       <p>
         This diagram represents the attackers' approach to capture zone C on Hue
         City. First of all, when we examine the capture zone itself we see that
         it's simple for defenders to establish a firm basic resistance. There
         are only 8 chokepoints into the capture zone, and with teams of 32 these
-        are usually swiftly occupied. From there, we break the approach down
-        into four sections. This is helpful because combat in each of the
-        sections is largely independent, and because the combat in each section
-        has its own character. Studying the sections in isolation reveals the
-        interesting choices that attackers have during their approach to the
-        capture zone.
+        chokepoints are usually swiftly occupied. From there, we break the
+        approach down into four sections. This is helpful because combat in each
+        of the sections is largely independent, and because the combat in each
+        section has its own character. Studying the sections in isolation
+        reveals the interesting choices that attackers have during their
+        approach to the capture zone.
       </p>
       <p>
         The left and right flanks are the main avenues for the assault. There's
@@ -106,9 +103,9 @@ const HueCityPage = () => {
         from which defenders can fire upon attackers in nearby sections. This
         makes the left flank an important target for the attackers, as
         disrupting the bastion can help allies across the map. The right flank
-        gives attackers safer routes to the centre and then even the left flank.
-        Breakthroughs from these flanks are massively disruptive to the
-        defenders, and will often lead to the capture zone falling.
+        gives attackers safer routes to the centre and beyond. Breakthroughs
+        from these flanks are massively disruptive to the defenders, and can
+        lead to the capture zone falling.
       </p>
       <p>
         The centre and the tunnel are a bit different. The centre is the most
@@ -157,18 +154,21 @@ const HueCityPage = () => {
         is generally a lack of coordination within the 6 man squads that every
         player is nominally a part of. Rather than act as units under the
         direction of the team leader, players in squads often play
-        independently. Several FPS games have made innovative changes however,
-        and adopting them could then enable map designers to ask more complex
-        strategic questions of teams. For example, <i>Overwatch</i> has its
-        'kudos' system to promote sporting behaviour. It also allows players to
-        queue for particular roles within the team, allowing the empowered
-        matchmaking system to more reliably deliver the embryo of a cohesive
-        team. <i>Squad</i> and <i>Hell Let Loose</i> feature the milestone
-        innovation of having a separate chat channel for the team leader and
-        their squad leaders. Finally, <i>Verdun</i> and <i>Post Scriptum</i>{" "}
-        wisely predefine what type of soldiers make up each squad, solving the
-        common issue in Rising Storm 2 of squads either being a mix of
-        uncomplementary specialised weaponry or almost exclusively riflemen with
+        independently.
+      </p>
+      <p>
+        Several FPS games have made innovative changes however, and adopting
+        them could then enable map designers to ask more complex strategic
+        questions of teams. For example, <i>Overwatch</i> has its 'kudos' system
+        to promote sporting behaviour. It also allows players to queue for
+        particular roles within the team, allowing the empowered matchmaking
+        system to more reliably deliver the embryo of a cohesive team.{" "}
+        <i>Squad</i> and <i>Hell Let Loose</i> feature the milestone innovation
+        of having a separate chat channel for the team leader and their squad
+        leaders. Finally, <i>Verdun</i> and <i>Post Scriptum</i> wisely
+        predefine what type of soldiers make up each squad, solving the common
+        issue in Rising Storm 2 of squads either being a mix of uncomplementary
+        specialised weaponry or squads being almost exclusively riflemen with
         little specialised support.
       </p>
       <h2>Conclusion (Verbatim)</h2>
