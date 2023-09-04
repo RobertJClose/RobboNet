@@ -3,6 +3,8 @@ import HomePageVideo from "../videos/HomePageCompilation.mp4";
 import Layout from "../components/layouts/Layout";
 import { ProjectGallery } from "../components/ProjectGallery";
 import { UnityProject } from "../components/UnityProject";
+import { Link } from 'gatsby';
+import QuickTurretPage from "./projects/untitled-tower-defence.js"
 
 const projectsData = [
   {
@@ -28,19 +30,23 @@ const projectsData = [
 const IndexPage = ({ data }) => {
   return (
     <Layout pageTitle="RobboNet">
-      <UnityProject projectName="ToyBuild" style={{width: 350, height: 350, pointerEvents: "none"}} />
+      <UnityProject
+        projectName="ToyBuild"
+        style={{ width: 350, height: 350, pointerEvents: "none" }}
+      />
       <h2>Bio:</h2>
       <p>
-        Hello there! My name is Robert, but most people call me either Robbie or Robbo.
-        <br/>
-        <br/>
+        Hello there! My name is Robert, but most people call me either Robbie or
+        Robbo.
+        <br />
+        <br />
         My aim is to start a career in the computer games industry, and this
         website presents my portfolio of projects.
-        <br/>
-        <br/>
-        After graduating with a first class MSci in theoretical physics from the University
-        of Nottingham, and then being waylaid by the pandemic, I started
-        teaching myself programming through the Unity game engine.
+        <br />
+        <br />
+        After graduating with a first class MSci in theoretical physics from the
+        University of Nottingham, and then being waylaid by the pandemic, I
+        started teaching myself programming through the Unity game engine.
       </p>
       <p>
         I'd say that my greatest asset is that I am very patient and ruthlessly
@@ -56,8 +62,103 @@ const IndexPage = ({ data }) => {
         migrated to Obsidian personal knowledge management software to keep my
         notes and thoughts organised as I roll towards the start of my career.
       </p>
-      <h2>My Projects:</h2>
-      <ProjectGallery projectsData={projectsData} />
+      <h2>Timeline:</h2>
+      <div class="timeline">
+        <div class="item left">
+          <div class="content">
+            <h3>Restaurant Waiter at Norton Grange Coastal Resort</h3>
+            <h4>June 2023 - Present</h4>
+            <p>
+              After returning from Brighton as a transformed man, I found a job
+              in the hospitality industry as a hotel waiter. This role provides
+              me an opportunity to hone my interpersonal skills in a dynamic and
+              high-intensity environment. This ongoing experience reinforces my
+              commitment to continuous improvement and prepares me for the
+              challenges and rewards of a future professional career.
+            </p>
+          </div>
+        </div>
+        <div class="item right">
+          <div class="content">
+            <h3><Link to="/projects/untitled-tower-defence">Quick Turret</Link></h3>
+            <h4>Q4 2022 - Q2 2023</h4>
+            <p>
+              My latest and proudest achievement - a dynamic tower defense game
+              showcasing my blossoming skills in coding, 3D modeling, and
+              modular design.
+            </p>
+          </div>
+        </div>
+        <div class="item right">
+          <div class="content">
+            <h3>Healing and Transformation: Confronting The Past</h3>
+            <h4>November 2021 - March 2023</h4>
+            <p>
+              Upon arriving in Brighton, I embarked on a new journey of healing
+              and transformation. Whilst continuing to work on my projects and
+              skills, I confronted my long-standing challenges with depression
+              and anxiety with the help of a therapist.
+              <br />
+              <br />
+              By the end of our tenancy, I really did feel transformed by my
+              time in the city. I once felt that the tendrils of depression were
+              all-pervasive, and that they had wrapped around the threads of my
+              life in an unbreakable knot. While I always felt a strong sense of
+              determination, now I surprise myself with optimism and rapid
+              bounce-backs, and I've never felt more excited to see where the
+              journey of my life goes next.
+            </p>
+          </div>
+        </div>
+        <div class="item left">
+          <div class="content">
+            <h3><Link to="/projects/hue-city">Hue City: A Map Design Case Study</Link></h3>
+            <h4>Q2 2022 - Q3 2022</h4>
+            <p>
+              After the KSP Companion, I felt a need to take time away from
+              large-scale Unity project work, and instead wanted to practise
+              game critique.
+              <br />
+              <br />
+              This is an in-depth exploration of map popularity dynamics in a
+              gaming community, uncovering the secrets behind one map's
+              exceptional appeal.
+            </p>
+          </div>
+        </div>
+        <div class="item right">
+          <div class="content">
+            <h3><Link to="/projects/ksp-companion-prototype">KSP Companion</Link></h3>
+            <h4>Q1 2021 - Q1 2022</h4>
+            <p>
+              My first major project - an intricate tool for Kerbal Space
+              Program players. I gradually put this together as I taught myself
+              Unity and C#, and it introduced me to Git, unit testing, and how
+              complexity can dramatically scale in software systems.
+            </p>
+          </div>
+        </div>
+        <div class="item left">
+          <div class="content">
+            <h3>Awakening to the Dream: The Covid Catalyst</h3>
+            <h4>July 2019 - The Pandemic - November 2021</h4>
+            <p>
+              After struggling with post-graduation job hunting, the Covid
+              pandemic then brought both adversity and space to reflect. My
+              pursuit of a physics PhD gave way as conversations with old
+              friends sparked self-acceptance of my interest in video games, and
+              my desire to create them. Furthermore, it was in these
+              conversations that I first acknowledged and disclosed my struggles
+              with depression, and I first began to believe that those
+              difficulties could be overcome.
+              <br />
+              <br />
+              An opportunity for a fresh start in Brighton arose and I took it,
+              bringing this difficult but pivotal chapter of my life to a close.
+            </p>
+          </div>
+        </div>
+      </div>
       <h2>Robbo the Gamer:</h2>
       <p>
         In my opinion, the first Dark Souls is the greatest game of all time. I
@@ -122,10 +223,10 @@ const IndexPage = ({ data }) => {
           <em>ever</em>
         </strong>
         , catch me putting down a teammate who has made a mistake, or
-        disrespecting an opponent who has frustrated my style. If you're really that desperate to
-        win, and if you truly love and respect the game you're playing, you'll
-        accept whatever has happened and keep trying your best - in my
-        experience, this attitude guides you back onto the path of victory
+        disrespecting an opponent who has frustrated my style. If you're really
+        that desperate to win, and if you truly love and respect the game you're
+        playing, you'll accept whatever has happened and keep trying your best -
+        in my experience, this attitude guides you back onto the path of victory
         anyway.
       </p>
     </Layout>

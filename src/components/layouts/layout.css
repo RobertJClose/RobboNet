@@ -1,7 +1,12 @@
 html {
     font-family: helvetica;
+    --background-color: #272932; 
+    --timeline-item-max-width: 25rem;
+    --timeline-gap: 1rem;
+    --timeline-width: 0.55rem;
+    --timeline-circle-size: 1.5rem;
 
-    background: #272932;
+    background: var(--background-color);
     color: rgb(198, 198, 198);
 }
 
@@ -47,4 +52,136 @@ a:visited {
 
 footer {
     border-top: 2px solid darkgray;
+}
+
+.timeline {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* The items on the timeline */
+.item {
+  position: relative;
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+
+  max-width: var(--timeline-item-max-width);
+  padding: 0.25rem 1rem;
+  border-radius: 10%;
+  margin: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .timeline {
+    position: relative;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+  }
+  .left {
+    order: 1;
+    align-self: end;
+    margin-right: var(--timeline-gap);
+  }
+
+  .right {
+    order: 2;
+    align-self: start;
+    margin-left: var(--timeline-gap);
+  }
+
+  /* The vertical timeline bar */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: var(--timeline-width);
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 0.5 * var(--timeline-width));
+    background-color: white;
+    border-radius: 40% / 2%;
+  }
+
+  /* Offset where the arrows and circles are on the timeline for each item */
+  .item:nth-child(1) {
+    --offset: 5rem;
+  }
+
+  .item:nth-child(2) {
+    --offset: 0rem;
+  }
+
+  .item:nth-child(3) {
+    --offset: -6rem;
+  }
+
+  .item:nth-child(4) {
+    --offset: 0rem;
+  }
+
+  .item:nth-child(5) {
+    --offset: 2.5rem;
+  }
+
+  .item:nth-child(6) {
+    --offset: -7rem;
+  }
+
+  /* The circles on the timeline */
+  .left > .content::after {
+    box-sizing: border-box;
+    position: absolute;
+    content: '';
+    width: var(--timeline-circle-size);
+    height: var(--timeline-circle-size);
+    top: calc(50% - 0.5 * var(--timeline-circle-size) - var(--offset));
+    left: calc(100% + var(--timeline-gap) - 0.5 * var(--timeline-circle-size));
+    background-color: white;
+    border: calc(0.15 * var(--timeline-circle-size)) solid #272932;
+    border-radius: 50%;
+  }
+
+  .right > .content::after {
+    box-sizing: border-box;
+    position: absolute;
+    content: '';
+    width: var(--timeline-circle-size);
+    height: var(--timeline-circle-size);
+    top: calc(50% - 0.5 * var(--timeline-circle-size) - var(--offset));
+    left: calc(0% - var(--timeline-gap) - 0.5 * var(--timeline-circle-size));
+    background-color: white;
+    border: calc(0.15 * var(--timeline-circle-size)) solid #272932;
+    border-radius: 50%;
+  }
+
+  /* The arrows on the timeline */
+  .left > .content::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: calc(50% - var(--timeline-gap) - var(--offset));
+    left: 100%;
+
+    border-width: var(--timeline-gap);
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+  }
+
+  .right > .content::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: calc(50% - var(--timeline-gap) - var(--offset));
+    right: 100%;
+
+    border-width: var(--timeline-gap);
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+  }
+  
 }
