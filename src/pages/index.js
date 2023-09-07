@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout pageTitle="RobboNet">
       <UnityProject
-        projectName="ToyBuild"
+        projectName="ToyBuildTwo"
         style={{ width: 350, height: 350, pointerEvents: "none" }}
       />
       <p>
