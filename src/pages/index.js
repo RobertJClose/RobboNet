@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
       <p>
         I've been on quite a journey to get to this point! At university I
         studied theoretical physics, and although I comfortably achieved my
-        Masters I failed to confront and overcome the shadows of depression and
+        Masters, I failed to confront and overcome the shadows of depression and
         anxiety that haunted my teenage years. It would take a global pandemic
         for me to recognise the transformation that was possible, and thus began
         my mission to make interesting games with interesting people.
@@ -177,19 +177,19 @@ const IndexPage = ({ data }) => {
         You must take your opponent into a deep dark forest where 2 + 2 = 5, and
         the path leading out is only wide enough for one.
       </blockquote>
-      <p>I aim to make that path as long as possible - Terrifying!</p>
+      <p>Terrifying! And my goal is to make that path as long and slow as possible!</p>
       <p>
         So what do I play? My favourite game of all time is the first Dark
         Souls, which I love for its originality and immersive world. That said,
         it is Dark Souls III that I believe offers the best canvas for play. I'm
         more of a strategy gamer than an action gamer however. I love Total War,
         and have enjoyed Chess, Civilization, Crusader Kings, and more. I also
-        adore the creative world of indie games: FTL, Risk Of Rain, Enter The
-        Gungeon, Bomber Crew, Battle Brothers, and the sublime Celeste all serve
-        as major inspirations to me. Finally, I love a blast from the past! I
-        still have my old PS2 for playing Burnout 3 and a few other old
-        favourites, and I use Flashpoint to revisit my favourite flash games as
-        well!
+        adore the creative world of indie games. Some major inspirations for me
+        include FTL, Risk Of Rain, Enter The Gungeon, Bomber Crew, Battle
+        Brothers, and the truly museum-worthy Celeste. Finally, I love a blast
+        from the past! I still dust and maintain my old PS2 for playing Burnout
+        3 and a few other old favourites, and I use Flashpoint to revisit my
+        favourite flash games as well!
       </p>
       <video autoPlay controls loop muted width={700}>
         <source src={HomePageVideo} type="video/mp4" />
@@ -203,15 +203,17 @@ const IndexPage = ({ data }) => {
         disrespecting an opponent who has frustrated my style. Many of the games
         I play have quite toxic communities, but I don't identify with that. I
         love competing for the sake of the game, and I always try to be
-        magnanimous in both victory and defeat. In my opinion, a merciless
-        pursuit of victory is done out of respect to the potential skills of the
-        opponent, not as an act of disrespect.
+        magnanimous in both victory and defeat. That said, I am a ruthless and
+        brutal competitor! In my opinion, a merciless pursuit of victory is done
+        out of respect to the potential skills of the opponent, not as an act of
+        disrespect.
       </p>
       <p>
-        If you're really so desperate to win, and if you truly love and respect
-        the game you're playing, you'll accept whatever has happened and keep
-        trying your best - in my experience, this attitude guides you back onto
-        the path of victory anyway!
+        To those that lose their heads and take it out on teammates and
+        opponents: If you're really so desperate to win, and if you truly love
+        and respect the game you're playing, you'll accept whatever has happened
+        and keep trying your best - in my experience, this attitude guides you
+        back onto the path of victory anyway!
       </p>
     </Layout>
   );
