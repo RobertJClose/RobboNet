@@ -12,6 +12,11 @@ const TowerDefencePage = () => {
   return (
     <Layout pageTitle="RobboNet: Untitled Tower Defence Game">
       <h1>Quick Turret (Tower Defence Project)</h1>
+      <h2>
+        <a href="https://github.com/RobertJClose/Quick-Turret" target="_blank">
+          GitHub
+        </a>
+      </h2>
       <p>
         I started this project as a quick attempt at making a cool turret - just
         to show myself how much I'd learned. It then took on a life of its own.
@@ -43,7 +48,10 @@ const TowerDefencePage = () => {
         following. This inspired me to start expanding this project, and after
         many iterations this is the latest demo:
       </p>
-      <UnityProject projectName="QuickTurret 1.0.0" style={{width: 960, height: 540}}/>
+      <UnityProject
+        projectName="QuickTurret 1.0.0"
+        style={{ width: 960, height: 540 }}
+      />
       <h2>The Systems</h2>
       <p>
         After struggling with scaling complexity in the KSP Companion Prototype,
@@ -70,6 +78,14 @@ const TowerDefencePage = () => {
         implement their behaviour, along with some bespoke components.
       </p>
       <h3 id="WaypointsSystem">The Waypoints System</h3>
+      <h4>
+        <a
+          href="https://github.com/RobertJClose/Quick-Turret/tree/main/Assets/Quick%20Turret/Waypoints"
+          target="_blank"
+        >
+          GitHub Directory
+        </a>
+      </h4>
       <p>
         This was the first system to be built. This system is used by the
         enemies to navigate around the path. Originally I had a more complex
@@ -111,6 +127,14 @@ const TowerDefencePage = () => {
         <source src={WaypointsSceneShowoff} type="video/mp4" />
       </video>
       <h3 id="DamageSystem">The Damage System</h3>
+      <h4>
+        <a
+          href="https://github.com/RobertJClose/Quick-Turret/tree/main/Assets/Quick%20Turret/DamageSystem"
+          target="_blank"
+        >
+          GitHub Directory
+        </a>
+      </h4>
       <p>
         To handle the dealing of damage I then created the Damage System. There
         are a few structs and classes composing the Damage System:
@@ -166,8 +190,20 @@ const TowerDefencePage = () => {
         this in the demo is blocked-critical damage - the text is styled as
         critical damage, except its colour is overridden to dark grey:
       </p>
-      <img src={BlockedCriticalDamageText} alt="Blocked Critical Damage Text" width={300}/>
+      <img
+        src={BlockedCriticalDamageText}
+        alt="Blocked Critical Damage Text"
+        width={300}
+      />
       <h3 id="TargetingSystem">The Targeting System</h3>
+      <h4>
+        <a
+          href="https://github.com/RobertJClose/Quick-Turret/tree/main/Assets/Quick%20Turret/TargetingSystem"
+          target="_blank"
+        >
+          GitHub Directory
+        </a>
+      </h4>
       <p>
         Next we have the Targeting System. This system allows for GameObjects to
         detect potential targets, prioritise between them, and then select one
@@ -202,8 +238,20 @@ const TowerDefencePage = () => {
         around relative to the origin of the Targetable, and they have their own
         subset of tags and thus options for prioritisation.
       </p>
-      <img src={SubtargetsImage} alt="Containozoid Enemy Subtargets" width={400}/>
+      <img
+        src={SubtargetsImage}
+        alt="Containozoid Enemy Subtargets"
+        width={400}
+      />
       <h3 id="TurretComponents">The Turret Components</h3>
+      <h4>
+        <a
+          href="https://github.com/RobertJClose/Quick-Turret/tree/main/Assets/Quick%20Turret/Turrets/Components"
+          target="_blank"
+        >
+          GitHub Directory
+        </a>
+      </h4>
       <p>
         Finally, I brought these systems together along with some bespoke
         components to make the turrets. The machine gun, minigun, and sniper

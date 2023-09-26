@@ -14,6 +14,14 @@ const KSPPage = () => {
     <Layout pageTitle="RobboNet: KSP Companion (Prototype)">
       <article>
         <h1>KSP Companion (Prototype)</h1>
+        <h2>
+          <a
+            href="https://github.com/RobertJClose/KSP-Companion-Prototype"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </h2>
         <p>
           This goal of this project was to build a tool that can be used
           alongside the game{" "}
@@ -129,15 +137,15 @@ const KSPPage = () => {
             spicy
           </a>{" "}
           algorithm requiring 4 iterations of a 7 step algorithm with ~100
-          mathematical operations per iteration. At first I found
-          the testing a tedious task that took time away from the "real"
-          programming work, but by the end I really appreciated the investment
-          and even enjoyed the <i>real</i> programming work that is writing
-          tests. Finally, this project was my first taste of git version
-          control. While I initially made a lot of generic chunky commits, after
-          some time I refined my style to commit logical units with descriptive
-          names. I also made better use of branches and GitHub issues as I
-          became more familiar with the possible git workflows.
+          mathematical operations per iteration. At first I found the testing a
+          tedious task that took time away from the "real" programming work, but
+          by the end I really appreciated the investment and even enjoyed the{" "}
+          <i>real</i> programming work that is writing tests. Finally, this
+          project was my first taste of git version control. While I initially
+          made a lot of generic chunky commits, after some time I refined my
+          style to commit logical units with descriptive names. I also made
+          better use of branches and GitHub issues as I became more familiar
+          with the possible git workflows.
         </p>
         <p>
           I have read that these sorts of programming tasks might be described
