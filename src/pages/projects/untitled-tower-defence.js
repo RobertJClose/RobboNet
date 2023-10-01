@@ -18,40 +18,35 @@ const TowerDefencePage = () => {
         </a>
       </h2>
       <p>
-        I started this project as a quick attempt at making a cool turret - just
-        to show myself how much I'd learned. It then took on a life of its own.
+        I started this project one night on a whim - just build a turret as fast
+        as possible to show myself how much I'd learned. It then became a great
+        platform to advance my skills. In particular, during this project I
+        first created custom tools for the Unity Editor, and once I started
+        customising the Editor I couldn't stop!
       </p>
       <p>
         I'd been playing a lot of{" "}
         <a href="https://en.wikipedia.org/wiki/Risk_of_Rain_2" target="_blank">
           Risk Of Rain 2
         </a>{" "}
-        and{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Bloons_Tower_Defense"
-          target="_blank"
-        >
-          Bloons Tower Defence 4
-        </a>{" "}
-        and felt inspired by the design of the two games. Risk Of Rain 2's
-        systems in particular drew my attention. I know the game is made in
+        and felt inspired by the design of the game. I know the game is made in
         Unity, and I'd spotted several things that to me were symptomatic of the
         game's code being well structured.
       </p>
       <p>
         Risk Of Rain's damage system can handle a plethora of interacting damage
-        types being dealt to players, turrets, enemies, and environment features
-        all at once in massive quantities. Furthermore, success in Risk Of Rain
-        2 involves combining lots of items and player abilities in satisfying
-        synergy. Bloons, on the other hand, requires synergy between the
-        placement of different turret types and the path the balloons are
-        following. This inspired me to start expanding this project, and after
-        many iterations this is the latest demo:
+        types and status effects being dealt between players, turrets, enemies,
+        and environment features - all at once in massive quantities.
+        Furthermore, success in Risk Of Rain 2 involves combining lots of items
+        and player abilities in satisfying synergy. This inspired me to start
+        expanding this project, and after many iterations this is the latest
+        demo:
       </p>
       <UnityProject
         projectName="QuickTurret 1.0.0"
         style={{ width: 960, height: 540 }}
       />
+      <p>I also used Blender to model the enemies and turrets, cool right?</p>
       <h2>The Systems</h2>
       <p>
         After struggling with scaling complexity in the KSP Companion Prototype,
@@ -113,15 +108,22 @@ const TowerDefencePage = () => {
         point-like Waypoints, but in reality implementing this wasn't within the
         scope of the project.
       </p>
+      <h4>The Waypoints Editor</h4>
       <p>
-        I created powerful custom Editor tools for manipulating the Waypoints
-        graph. In the Unity Inspector you can change the name, position,
-        connections, or delete a Waypoint. The Scene view has custom behaviour
-        that's even more powerful however. Via handles you can relocate
-        waypoints, append new waypoints, add and remove connections, and split
-        connections in half. The Scene view also features a custom GUI can be
-        expanded or hidden, and thanks to some hotkeys the Scene view workflow
-        is really smooth:
+        After a painful experience using the default Inspector to set up the
+        waypoints by hand, I knew it was time for me to learn how to customise
+        the Unity Editor. I set about learning about how Unity serialises the
+        data in your components, and how to create custom Inspector and Scene
+        behaviour by extending the <c>Editor</c> class.
+      </p>
+      <p>
+        I was really happy with the final result. In the Unity Inspector you can
+        change the name, reposition, reconnect, or delete a Waypoint. The Scene
+        view has custom behaviour that's even more powerful however. Via handles
+        you can relocate waypoints, append new waypoints, add and remove
+        connections, and split connections in half. The Scene view also features
+        a custom GUI can be expanded or hidden, and thanks to some hotkeys the
+        Scene view workflow is really smooth:
       </p>
       <video autoPlay controls loop muted width={700}>
         <source src={WaypointsSceneShowoff} type="video/mp4" />
@@ -182,13 +184,18 @@ const TowerDefencePage = () => {
         For example, its important that players know when their damage is
         blocked, so dark grey blocked damage has a high priority.
       </p>
+      <h4>
+        The <c>DamageTextSettings</c> Editor
+      </h4>
       <p>
         With the help of another powerful custom Editor, a DamageTextSettings
-        object allows for some cosmetic options to remain unset by an override,
-        so the final appearance of a DamageText instance can be a mixture that
-        represents several present DamageTypes all at once. A common example of
-        this in the demo is blocked-critical damage - the text is styled as
-        critical damage, except its colour is overridden to dark grey:
+        object allows for the final appearance of a DamageText instance to
+        represent several present DamageTypes all at once. Each DamageType has a
+        priority value, so its styling can override another DamageType. However,
+        each DamageType also can leave a styling unset, enabling its appearance
+        to be altered by another DamageType of a different priority. A common
+        example of this in the demo is blocked-critical damage - the text is
+        styled as critical damage, except its colour is overridden to dark grey:
       </p>
       <img
         src={BlockedCriticalDamageText}
@@ -237,6 +244,11 @@ const TowerDefencePage = () => {
         Inspector or the interface of Targetable. The Subtargets can be moved
         around relative to the origin of the Targetable, and they have their own
         subset of tags and thus options for prioritisation.
+      </p>
+      <h4>More Custom Inspectors</h4>
+      <p>
+        Of course, I had to make some custom inspectors and scene gizmos to make
+        it easier to work with the components of the Targetting System.
       </p>
       <img
         src={SubtargetsImage}

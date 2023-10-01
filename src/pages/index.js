@@ -27,29 +27,6 @@ const IndexPage = ({ data }) => {
         for me to recognise the transformation that was possible, and thus began
         my mission to make interesting games with interesting people.
       </p>
-      <p>
-        Strengths? While it would be easy to point to my technical ability,
-        patience is my secret weapon! It's the calm center that allows me to
-        approach even the most daunting technical challenges with unwavering
-        confidence. I firmly believe that if success is possible, it's not a
-        matter of "if" but "when".
-      </p>
-      <p>
-        I also think people underestimate my potential for creativity! I think
-        of creativity like exploring an unknown space, and being technically
-        able is like your ability to cut through tough terrain without getting
-        lost. On its own, technical ability won't necessarily take you anywhere,
-        but it gives you freedom, and enables the bold to explore. I think I
-        express this best through my gaming style. I'm not afraid to explore
-        techniques that are{" "}
-        <a
-          href="https://www.urbandictionary.com/define.php?term=off-meta"
-          target="_blank"
-        >
-          'off-meta'
-        </a>
-        , and love ambushing veteran players with something new!
-      </p>
       <h2>Timeline</h2>
       <div class="timeline">
         <div class="item left">
@@ -58,11 +35,12 @@ const IndexPage = ({ data }) => {
             <h4>June 2023 - Present</h4>
             <p>
               After returning from Brighton as a transformed man, I found a job
-              in the hospitality industry as a hotel waiter. This role provides
-              me an opportunity to hone my interpersonal skills in a dynamic and
-              high-intensity environment. This ongoing experience reinforces my
-              commitment to continuous improvement and prepares me for the
-              challenges and rewards of a future professional career.
+              in the hospitality industry as a hotel waiter. This role allows me
+              to exercise my geniality and immaculate politeness in a dynamic
+              and highly social environment. It also gives me a chance to
+              practise my teamwork skills and adaptability in a professional
+              environment, away from the battlegrounds of my favourite team
+              games.
             </p>
           </div>
         </div>
@@ -73,9 +51,10 @@ const IndexPage = ({ data }) => {
             </h3>
             <h4>Q4 2022 - Q2 2023</h4>
             <p>
-              My latest and proudest achievement - a dynamic tower defense game
-              showcasing my blossoming skills in coding, 3D modeling, and
-              modular design.
+              My latest and proudest achievement - a dynamic tower defense game.
+              This project showcases my blossoming skills in modular software
+              design. Furthermore, during this project I made a surprising
+              discovery: I might have a passion for making Editor tools?
             </p>
           </div>
         </div>
@@ -177,19 +156,20 @@ const IndexPage = ({ data }) => {
         You must take your opponent into a deep dark forest where 2 + 2 = 5, and
         the path leading out is only wide enough for one.
       </blockquote>
-      <p>Terrifying! And my goal is to make that path as long and slow as possible!</p>
+      <p>Terrifying!</p>
       <p>
         So what do I play? My favourite game of all time is the first Dark
         Souls, which I love for its originality and immersive world. That said,
-        it is Dark Souls III that I believe offers the best canvas for play. I'm
-        more of a strategy gamer than an action gamer however. I love Total War,
-        and have enjoyed Chess, Civilization, Crusader Kings, and more. I also
-        adore the creative world of indie games. Some major inspirations for me
-        include FTL, Risk Of Rain, Enter The Gungeon, Bomber Crew, Battle
-        Brothers, and the truly museum-worthy Celeste. Finally, I love a blast
-        from the past! I still dust and maintain my old PS2 for playing Burnout
-        3 and a few other old favourites, and I use Flashpoint to revisit my
-        favourite flash games as well!
+        it is Dark Souls III that I believe offers the best canvas for play.
+        Typically I'm more of a strategy gamer than an action gamer however. I
+        love Total War, Chess, Civilization, Crusader Kings, Dwarf Fortress,
+        Tropico, Motorsport Manager, and more. I also adore the creative world
+        of indie games. Some major inspirations for me include FTL, Risk Of
+        Rain, Enter The Gungeon, Hades, Bomber Crew, Battle Brothers, and the
+        truly museum-worthy Celeste. Finally, I love a blast from the past! I
+        still dust and maintain my old PS2 for playing Burnout 3 and a few other
+        old favourites, and I use Flashpoint to revisit my favourite flash
+        games, mainly the brutal Mud and Blood 2!
       </p>
       <video autoPlay controls loop muted width={700}>
         <source src={HomePageVideo} type="video/mp4" />
@@ -214,6 +194,17 @@ const IndexPage = ({ data }) => {
         and respect the game you're playing, you'll accept whatever has happened
         and keep trying your best - in my experience, this attitude guides you
         back onto the path of victory anyway!
+      </p>
+      <h2>Beyond Gaming</h2>
+      <p>
+        Did you know there is more to the world than video games? No, really.
+      </p>
+      <p>
+        I am also a pretty sick bass player, and love the music of Daft Punk,
+        The Strokes, Tame Impala, King Gizzard, and countless others. I read an
+        awful lot, mostly non-fiction. I like football (Wolves), F1 (McClaren),
+        the NFL (Seahawks), I've run the London marathon (once), and I surf
+        (badly).
       </p>
     </Layout>
   );
