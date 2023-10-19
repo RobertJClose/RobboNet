@@ -83,6 +83,7 @@ footer {
     align-items: center;
     height: 1300px;
   }
+
   .left {
     order: 1;
     align-self: end;
@@ -186,4 +187,9 @@ footer {
     border-color: transparent white transparent transparent;
   }
   
+  .extraProjects {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 }

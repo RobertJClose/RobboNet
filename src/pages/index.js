@@ -134,6 +134,17 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </div>
+      <div class="extraProjects">
+        <div class="item">
+          <h3>Other Projects</h3>
+          <p>
+            I also have projects that are either still in progress or on an "indefinite hiatus".
+          </p>
+          <p>
+            These include a chess variant, a "KSP-like" game, a proper Unity package that bundles my reusable code, a Total War inspired battle engine, and an arcade racing game.
+          </p>
+        </div>
+      </div>
       <h2>Robbo the Creative Gamer</h2>
       <p>
         As a gamer, I like immersive worlds that offer mechanical depth. While
