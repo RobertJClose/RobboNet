@@ -138,10 +138,13 @@ const IndexPage = ({ data }) => {
         <div class="item">
           <h3>Other Projects</h3>
           <p>
-            I also have projects that are either still in progress or on an "indefinite hiatus".
+            I also have projects that are either still in progress or on an
+            "indefinite hiatus".
           </p>
           <p>
-            These include a chess variant, a "KSP-like" game, a proper Unity package that bundles my reusable code, a Total War inspired battle engine, and an arcade racing game.
+            These include a chess variant, a "KSP-like" game, a proper Unity
+            package that bundles my reusable code (including a complete rewrite of the Unity maths libraries but with double precision floating-point numbers), a Total War inspired battle
+            engine, and an arcade racing game.
           </p>
         </div>
       </div>
