@@ -81,7 +81,7 @@ footer {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    height: 1300px;
+    height: 1500px;
   }
 
   .left {
@@ -110,7 +110,7 @@ footer {
 
   /* Offset where the arrows and circles are on the timeline for each item */
   .item:nth-child(1) {
-    --offset: 5rem;
+    --offset: 0rem;
   }
 
   .item:nth-child(2) {
@@ -118,7 +118,7 @@ footer {
   }
 
   .item:nth-child(3) {
-    --offset: -6rem;
+    --offset: 0rem;
   }
 
   .item:nth-child(4) {
@@ -126,11 +126,15 @@ footer {
   }
 
   .item:nth-child(5) {
-    --offset: 2.5rem;
+    --offset: 0rem;
   }
 
   .item:nth-child(6) {
-    --offset: -7rem;
+    --offset: 0rem;
+  }
+
+  .item:nth-child(7) {
+    --offset: 0rem;
   }
 
   /* The circles on the timeline */

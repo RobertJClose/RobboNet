@@ -15,32 +15,55 @@ const IndexPage = ({ data }) => {
         Hi! My name is Robert, but I also go by Robbie and Robbo!
         <br />
         <br />
-        Welcome to my digital space! I am passionate about gaming and the world
-        of game development, and it is my mission to bring my technical skills
-        and creative thinking to the vibrant gaming industry.
+        Welcome to my digital space! After graduating with a Masters in
+        theoretical physics, I then struggled in the pandemic with a major
+        deterioration in my mental health. I overcame these struggles however,
+        and one way I did this was by teaching myself programming through the
+        Unity game engine! This website presents the journey I've been on and
+        the things I've made along the way.
       </p>
       <p>
-        I've been on quite a journey to get to this point! At university I
-        studied theoretical physics, and although I comfortably achieved my
-        Masters, I failed to confront and overcome the shadows of depression and
-        anxiety that haunted my teenage years. It would take a global pandemic
-        for me to recognise the transformation that was possible, and thus began
-        my mission to make interesting games with interesting people.
+        My most recent complete work is{" "}
+        <Link to="/projects/untitled-tower-defence">Quick Turret</Link>, a demo
+        for a tower defence game. I'm really proud of how the game's code is
+        structured internally, and it really shows how my software engineering
+        skills have developed over the last few years.
       </p>
       <h2>Timeline</h2>
       <div class="timeline">
+        <div class="item right">
+          <div class="content">
+            <h3>Double Precision Unity Maths Library</h3>
+            <h4>2021 - Present</h4>
+            <p>
+              When working on the KSP Companion, I needed more precision that
+              the Unity maths libraries could offer. I could've solved this
+              issue in a few ways, and I felt the most conceptually simple would
+              be to rewrite the Unity functions I needed but with double
+              precision floating-point numbers. After that project was complete,
+              I then began gradually adding double precision implementations for
+              the rest of the Unity functions.
+            </p>
+            <p>
+              I have now finished this work, and am in the process of getting it
+              onto the Unity Asset Store!
+            </p>
+          </div>
+        </div>
         <div class="item left">
           <div class="content">
             <h3>Restaurant Waiter at Norton Grange Coastal Resort</h3>
-            <h4>June 2023 - Present</h4>
+            <h4>June 2023 - Dec 2024</h4>
             <p>
               After returning from Brighton as a transformed man, I found a job
-              in the hospitality industry as a hotel waiter. This role allows me
-              to exercise my geniality and immaculate politeness in a dynamic
-              and highly social environment. It also gives me a chance to
-              practise my teamwork skills and adaptability in a professional
-              environment, away from the battlegrounds of my favourite team
-              games.
+              in the hospitality industry as a hotel waiter. I'm very grateful
+              for how this role allowed me to feel complete in my mental health
+              recovery, and I met some great people that I've stayed friends
+              with.
+            </p>
+            <p>
+              I ultimately quit this job at the end of the year, in anticipation
+              of a move away from my native Isle Of Wight to somewhere new.
             </p>
           </div>
         </div>
@@ -142,9 +165,8 @@ const IndexPage = ({ data }) => {
             "indefinite hiatus".
           </p>
           <p>
-            These include a chess variant, a "KSP-like" game, a proper Unity
-            package that bundles my reusable code (including a complete rewrite of the Unity maths libraries but with double precision floating-point numbers), a Total War inspired battle
-            engine, and an arcade racing game.
+            These include a chess variant, a "KSP-like" game, a Total War
+            inspired battle engine, and an arcade racing game.
           </p>
         </div>
       </div>
