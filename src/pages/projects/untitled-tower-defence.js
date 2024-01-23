@@ -20,9 +20,7 @@ const TowerDefencePage = () => {
       <p>
         I started this project one night on a whim - just build a turret as fast
         as possible to show myself how much I'd learned. It then became a great
-        platform to advance my skills. In particular, during this project I
-        first created custom tools for the Unity Editor, and once I started
-        customising the Editor I couldn't stop!
+        platform to advance my skills.
       </p>
       <p>
         I'd been playing a lot of{" "}
@@ -36,17 +34,14 @@ const TowerDefencePage = () => {
       <p>
         Risk Of Rain's damage system can handle a plethora of interacting damage
         types and status effects being dealt between players, turrets, enemies,
-        and environment features - all at once in massive quantities.
-        Furthermore, success in Risk Of Rain 2 involves combining lots of items
-        and player abilities in satisfying synergy. This inspired me to start
-        expanding this project, and after many iterations this is the latest
-        demo:
+        and environment features - all at once in massive quantities. This
+        inspired me to start expanding this project, and after many iterations
+        this is the latest demo:
       </p>
       <UnityProject
         projectName="QuickTurret 1.0.0"
         style={{ width: 960, height: 540 }}
       />
-      <p>I also used Blender to model the enemies and turrets, cool right?</p>
       <h2>The Systems</h2>
       <p>
         After struggling with scaling complexity in the KSP Companion Prototype,
@@ -83,7 +78,7 @@ const TowerDefencePage = () => {
       </h4>
       <p>
         This was the first system to be built. This system is used by the
-        enemies to navigate around the path. Originally I had a more complex
+        enemies to navigate around the path. Originally the game had a more complex
         path with many branches, and this system was up to the task of guiding
         enemies towards the end. The Waypoints System has four classes, two of
         which are MonoBehaviour components:
