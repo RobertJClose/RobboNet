@@ -78,10 +78,10 @@ const TowerDefencePage = () => {
       </h4>
       <p>
         This was the first system to be built. This system is used by the
-        enemies to navigate around the path. Originally the game had a more complex
-        path with many branches, and this system was up to the task of guiding
-        enemies towards the end. The Waypoints System has four classes, two of
-        which are MonoBehaviour components:
+        enemies to navigate around the path. Originally the game had a more
+        complex path with many branches, and this system was up to the task of
+        guiding enemies towards the end. The Waypoints System has four classes,
+        two of which are MonoBehaviour components:
         <ul>
           <li>Waypoint</li>
           <li>WaypointConnection</li>
@@ -91,7 +91,8 @@ const TowerDefencePage = () => {
         The Waypoints component stores a list of Waypoint objects, each of which
         has a Vector3 containing its position in the 3D Scene. Each Waypoint
         also keeps a list of WaypointConnection objects, each of which can point
-        to another Waypoint. In this way, a directed graph (digraph) is formed.
+        to another Waypoint. This is a variant of the adjacency list
+        implementation of a directed graph (digraph) data structure.
       </p>
       <p>
         The Waypoints component then integrates said digraph with a Unity
